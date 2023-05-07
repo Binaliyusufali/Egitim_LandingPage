@@ -1,0 +1,59 @@
+@import 'typographs';
+@import 'mixin';
+@import 'images';
+
+* {
+    font-family: $font2;
+}
+
+.navbar {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+
+    &-brand {
+        font-family: $fonts-content;
+    }
+
+    &-nav {
+        a {
+            color: white
+        }
+    }
+}
+
+.carousel {
+    img {
+        width: 100%;
+        border-radius: 50%;
+        height: 450px;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+
+    &-caption {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border-radius: 30px;
+        bottom: 0%;
+
+
+    }
+
+}
+
+.card {
+    &:hover {
+        @include hover;
+        box-shadow: 2px 2px 15px rgb(193, 193, 208);
+    }
+}
+
+.footer {
+    .nav-link-color {
+        color: white !important;
+      }
+}
+.login-bg{
+    background-color: red;
+    height: 50vh;
+}
